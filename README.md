@@ -174,15 +174,82 @@ lib/
 ## ⚙️ Instalación
 
 ### Requisitos
-- Flutter 3.x
-- Dart 3.x
+- Flutter 3.x o superior
+- Dart 3.x o superior
 - Android Studio o VS Code
-- API Key de TMDB
+- Git
+- Cuenta y API Key de TMDB
 
 ### Pasos
 
-1. **Clonar proyecto**
+1. **Instalar Flutter**  
+Descarga Flutter desde el sitio oficial e instálalo según tu sistema operativo:  
+https://docs.flutter.dev/get-started/install  
+
+2. **Verificar la instalación de Flutter**
 ```bash
-git https://github.com/Alex01Dev/DMI_Practica07_220419.git
+flutter doctor
+Clonar el repositorio
+
+bash
+Copy code
+git clone https://github.com/Alex01Dev/DMI_Practica07_220419.git
 cd cinemapedia_220419
-´´´
+Abrir el proyecto en el editor
+
+Android Studio o VS Code
+
+Abrir la carpeta cinemapedia_220419
+
+Instalar dependencias del proyecto
+
+bash
+Copy code
+flutter pub get
+Configurar la API Key de TMDB
+Crear una cuenta en https://www.themoviedb.org, obtener la API Key y agregarla en el archivo correspondiente del proyecto (variables de entorno o archivo de constantes):
+
+env
+Copy code
+TMDB_API_KEY=TU_API_KEY_AQUI
+Verificar dispositivos disponibles
+
+bash
+Copy code
+flutter devices
+Iniciar un emulador (opcional)
+
+bash
+Copy code
+flutter emulators
+flutter emulators --launch nombre_del_emulador
+Ejecutar la aplicación
+
+bash
+Copy code
+flutter run
+Ejecutar la aplicación en una plataforma específica (opcional)
+
+bash
+Copy code
+flutter run -d chrome
+Compilar la aplicación (opcional)
+
+Android APK:
+
+bash
+Copy code
+flutter build apk
+Android App Bundle:
+
+bash
+Copy code
+flutter build appbundle
+Ejecutar pruebas (opcional)
+
+bash
+Copy code
+flutter test
+✅ Resultado:
+La aplicación se ejecutará correctamente mostrando información de películas obtenida desde la API de TMDB.
+
